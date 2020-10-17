@@ -1,0 +1,28 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "lerna run start",
+    "lint": "mctl lint",
+    "test": "mctl test",
+    "commit": "mctl commit",
+    "format": "mctl format",
+    "typecheck": "mctl typecheck",
+    "checkcommit": "mctl precommit",
+    "dev": "yarn workspace @nyamushka/app dev"
+  },
+  "devDependencies": {
+    "@monstrs/mctl": "0.1.82",
+    "husky": "4.2.5",
+    "lerna": "3.22.1",
+    "typescript": "3.9.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "mctl precommit",
+      "commit-msg": "mctl commitmsg"
+    }
+  },
+  "workspaces": [
+    "frontend/**/*"
+  ]
+}

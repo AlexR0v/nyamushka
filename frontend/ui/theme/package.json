@@ -1,0 +1,11 @@
+{
+  "name": "@ui/theme",
+  "version": "0.0.0",
+  "main": "src/index.tsx",
+  "license": "MIT",
+  "dependencies": {
+    "emotion": "^10.0.27",
+    "emotion-theming": "^10.0.27",
+    "react": "^16.13.1"
+  }
+}
