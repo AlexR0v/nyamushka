@@ -3,6 +3,7 @@ interface Border {
   selected: string
   disabled: string
   dashedDefault: string
+  hover: string
 }
 
 export const borders: Border = {
@@ -10,4 +11,5 @@ export const borders: Border = {
   selected: '4px solid #D91667',
   disabled: '4px solid #B3B3B3',
   dashedDefault: '1px dashed #2EA8E6',
+  hover: '1px dashed transparent',
 }
