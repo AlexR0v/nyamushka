@@ -1,5 +1,3 @@
-import { ChickenCard }  from './ChickenCard'
-import { FishCard }     from './FishCard'
-import { FoieGrasCard } from './FoieGrasCard'
+import { Card } from './Card'
 
-export { FoieGrasCard, FishCard, ChickenCard }
+export { Card }

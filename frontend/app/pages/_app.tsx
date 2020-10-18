@@ -5,7 +5,6 @@ import { IntlProvider }  from 'react-intl'
 
 import { theme }         from '@ui/theme'
 
-
 export default class App extends NextApp {
   render() {
     const { Component, pageProps } = this.props
