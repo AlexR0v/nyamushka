@@ -1,3 +1,3 @@
 # nyamushka
 
-https://nyamushka.vercel.app/
+https://nyamushka-git-chore-release.alexr0v.vercel.app
