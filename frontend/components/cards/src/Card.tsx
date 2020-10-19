@@ -12,7 +12,6 @@ export const Card = () => {
 
   const [isMouseLeave, setIsMouseLeave] = useState(false)
   const [isMouseOver, setIsMouseOver] = useState(false)
-  const [activeByu, setActiveByu] = useState(false)
 
   const [selectedCards, setSelectedCards] = useState([])
   const [cards, setCards] = useState(cardItems)
@@ -27,6 +26,14 @@ export const Card = () => {
   useEffect(() => {
     console.log(`Ваши покупки: ${selectedCards}`)
   }, [selectedCards])
+
+  const mouseHoverByu = event=>{
+    event.target.style.borderBottom = 'none'
+  }
+
+  const mouseLeaveByu = event=>{
+    event.target.style.borderBottom = '1px dashed #2EA8E6'
+  }
 
   return (
     <>
@@ -217,9 +224,9 @@ export const Card = () => {
                   fontWeight='normal'
                   fontSize='semiSmall'
                   pl={1}
-                  onMouseOver={() => setActiveByu(true)}
-                  onMouseLeave={() => setActiveByu(false)}
-                  borderBottom={activeByu ? 'hover' : 'dashedDefault'}
+                  onMouseOver={mouseHoverByu}
+                  onMouseLeave={mouseLeaveByu}
+                  borderBottom='dashedDefault'
                   style={{ cursor: 'pointer' }}
                   onClick={() => handleAddCard(id)}
                 >
